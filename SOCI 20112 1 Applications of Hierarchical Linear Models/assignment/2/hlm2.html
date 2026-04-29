@@ -1,0 +1,774 @@
+<html lang=en>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body bgcolor="FFFFFF" fgcolor="000000">
+
+<hr \>
+ Module:      HLM2 (7.30)<br>
+ Date:        Apr 29, 2026<br>
+ Time:        03:53:51<br>
+
+<hr \>
+<br>
+<h2>Specifications for this Bernoulli HLM2 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = C:\Users\admin\Desktop\nels_hw.mdm<br>
+  The command file for this run = C:\Users\admin\Desktop\partb 4-5.hlm<br>
+  Output file name              = C:\Users\admin\Desktop\hlm2.html<br>
+  The maximum number of level-1 units = 1092<br>
+  The maximum number of level-2 units = 163<br>
+  The maximum number of micro iterations = 14<br>
+  Method of estimation: full maximum likelihood via EM-Laplace 2<br>
+<br>
+  Maximum number of macro iterations = 100<br>
+<br>
+  Distribution at Level-1: Bernoulli<br>
+<br>
+  The outcome variable is   BAGRAD    <br>
+<h3>Summary of the model specified</h3>
+<h4>Step 2 model</h4>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;Prob(<i>BAGRAD</i><sub><small><i>ti</i></small></sub>=1|<i>&pi;</i><sub><small><i>i</i></small></sub>) = <i>&#981;</i><sub><small><i>ti</i></small></sub><br>&nbsp;&nbsp;&nbsp;&nbsp;log[<i>&#981;</i><sub><small><i>ti</i></small></sub>/(1 - <i>&#981;</i><sub><small><i>ti</i></small></sub>)] = &eta;<sub><small><i>ti</i></small></sub><br>&nbsp;&nbsp;&nbsp;&nbsp;&eta;<sub><small><i>ti</i></small></sub> = <i>&pi;</i><sub><small><i>0i</i></small></sub> + <i>&pi;</i><sub><small><i>1i</i></small></sub>*(<i>FEMALE</i><sub><small><i>ti</i></small></sub>) + <i>&pi;</i><sub><small><i>2i</i></small></sub>*(<i>BLACK</i><sub><small><i>ti</i></small></sub>) + <i>&pi;</i><sub><small><i>3i</i></small></sub>*(<i>HISPANIC</i><sub><small><i>ti</i></small></sub>) + <i>&pi;</i><sub><small><i>4i</i></small></sub>*(<i>ASIAN</i><sub><small><i>ti</i></small></sub>) + <i>&pi;</i><sub><small><i>5i</i></small></sub>*(<i>BYSES</i><sub><small><i>ti</i></small></sub>) <h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>0i</i></small></sub> = <i>&beta;</i><sub><small><i>00</i></small></sub> + <i>&beta;</i><sub><small><i>01</i></small></sub>*(<i>CATHOLIC</i><sub><small><i>i</i></small></sub>) + <i>&beta;</i><sub><small><i>02</i></small></sub>*(<i>URBAN</i><sub><small><i>i</i></small></sub>) + <i>&beta;</i><sub><small><i>03</i></small></sub>*(<i>PCTMIN_S</i><sub><small><i>i</i></small></sub>) + <i>&beta;</i><sub><small><i>04</i></small></sub>*(<i>SCHSIZE</i><sub><small><i>i</i></small></sub>) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>05</i></small></sub>*(<i>FRELUNCH</i><sub><small><i>i</i></small></sub>) + <i>r</i><sub><small><i>0i</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>1i</i></small></sub> = <i>&beta;</i><sub><small><i>10</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>2i</i></small></sub> = <i>&beta;</i><sub><small><i>20</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>3i</i></small></sub> = <i>&beta;</i><sub><small><i>30</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>4i</i></small></sub> = <i>&beta;</i><sub><small><i>40</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>5i</i></small></sub> = <i>&beta;</i><sub><small><i>50</i></small></sub> <br>
+<br>
+Level-1 variance = 1/[<i>&#981;</i><sub><small><i>ti</i></small></sub>(1-<i>&#981;</i><sub><small><i>ti</i></small></sub>)]
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&eta;<sub><small><i>ti</i></sub></small> = <i>&beta;</i><sub><small><i>00</i></small></sub>&nbsp;+ <i>&beta;</i><sub><small><i>01</i></small></sub>*<i>CATHOLIC</i><sub><small><i>i</i></small></sub>&nbsp;+ <i>&beta;</i><sub><small><i>02</i></small></sub>*<i>URBAN</i><sub><small><i>i</i></small></sub>&nbsp;+ <i>&beta;</i><sub><small><i>03</i></small></sub>*<i>PCTMIN_S</i><sub><small><i>i</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>04</i></small></sub>*<i>SCHSIZE</i><sub><small><i>i</i></small></sub>&nbsp;+ <i>&beta;</i><sub><small><i>05</i></small></sub>*<i>FRELUNCH</i><sub><small><i>i</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>10</i></small></sub>*<i>FEMALE</i><sub><small><i>ti</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>20</i></small></sub>*<i>BLACK</i><sub><small><i>ti</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>30</i></small></sub>*<i>HISPANIC</i><sub><small><i>ti</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>40</i></small></sub>*<i>ASIAN</i><sub><small><i>ti</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&beta;</i><sub><small><i>50</i></small></sub>*<i>BYSES</i><sub><small><i>ti</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; + <i>r</i><sub><small><i>0i</i></small></sub><br>
+</tbody></table>
+<h2>Results for Non-linear Model with the Logit Link Function<br><small>Unit-Specific Model, PQL Estimation - (macro iteration 163)</small></h2>
+<br>
+&tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;     0.06103</td></tr></tbody></table>
+<br>
+Standard error of &tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;     0.07727</td></tr></tbody></table>
+<br>
+Approximate confidence intervals of tau variances<br>
+ INTRCPT1    : (0.005,0.745)<br>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&pi;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.072</td></tr>
+</tbody></table>
+The value of the log-likelihood function at iteration 2 = -1.560213E+003<br>
+<h4> Final estimation of fixed effects: (Unit-specific model)<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.484864</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.231554</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.094</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.038</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.427423</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.314428</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.359</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.176</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.214513</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.201</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.029</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532546</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.381961</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.394</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.165</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000092</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.000133</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.692</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.490</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002785</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005352</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.520</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.603</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.138510</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.692</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.007</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.373578</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.259284</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.441</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.150</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040370</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.230959</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.175</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.861</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.012120</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.225909</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   4.480</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.008469</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.111104</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.077</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Odds<br>Ratio</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Confidence<br>Interval</td>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.484864</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.615781</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.390,0.973)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.427423</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.533301</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.824,2.854)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.603421</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.049,2.450)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532546</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.587109</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.276,1.249)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000092</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.999908</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.000,1.000)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002785</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.997218</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.987,1.008)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.451830</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.106,1.905)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.373578</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.688268</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.414,1.145)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040370</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.041196</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.662,1.638)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.012120</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      2.751427</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.766,4.287)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub></td> <td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.008469</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>      2.741401</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>(2.204,3.409)</td>
+</tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (Unit-specific model with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.484864</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.235110</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.062</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.041</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.427423</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.345055</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.239</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.217</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.195557</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.414</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.017</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532546</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.375994</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.416</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.159</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000092</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.000144</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.641</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.522</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002785</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005854</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.476</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.635</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.130858</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.849</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.004</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.373578</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.249651</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.496</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.135</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040370</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.206466</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.196</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.845</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.012120</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.217353</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   4.657</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.008469</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.108602</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.286</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Odds<br>Ratio</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Confidence<br>Interval</td>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.484864</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.615781</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.387,0.980)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.427423</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.533301</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.775,3.032)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.603421</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.089,2.360)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532546</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.587109</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.279,1.234)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000092</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.999908</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.000,1.000)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002785</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.997218</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.986,1.009)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.451830</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.123,1.877)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.373578</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.688268</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.422,1.124)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040370</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.041196</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.694,1.562)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.012120</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      2.751427</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.796,4.216)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub></td> <td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.008469</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>      2.741401</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>(2.215,3.393)</td>
+</tbody></table>
+<br>
+
+<h4>Final estimation of variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1, <i>r</i><sub><small><i>0</i></small></sub></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.24705</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.06103</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> 157</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   173.48983</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.174</td></tr>
+</tbody></table>
+<h2>Results for Unit-Specific Model, EM Laplace-2 Estimation<br><small>Iteration 226</small></h2><br>
+&tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;     0.06403</td></tr></tbody></table>
+<br>
+Standard error of &tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;     0.09278</td></tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&pi;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.075</td></tr>
+</tbody></table>
+
+The log-likelihood at EM Laplace-2 iteration 226 is -1.637457E+003
+
+<h4> Final estimation of fixed effects
+ (Unit-specific model)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.490909</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.237461</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.067</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.040</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.432419</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.310778</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.391</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.166</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.478274</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.248735</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.923</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.056</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.539102</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.408918</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.318</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.189</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.000132</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.706</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.481</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002833</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005101</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.555</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.579</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.377443</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.156742</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.408</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.016</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.378144</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.280157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.350</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.177</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040848</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.264167</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.155</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.877</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.023749</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.240321</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   4.260</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.020394</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.117732</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   8.667</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Odds<br>Ratio</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Confidence<br>Interval</td>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.490909</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.612070</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.383,0.979)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.432419</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.540980</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.834,2.848)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.478274</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.613288</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.987,2.637)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.539102</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.583272</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.260,1.309)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.999907</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.000,1.000)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002833</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.997171</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.987,1.007)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.377443</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.458551</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.072,1.984)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.378144</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.685132</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.395,1.187)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040848</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.041694</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.620,1.750)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.023749</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      2.783610</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.737,4.462)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub></td> <td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.020394</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>      2.774287</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>(2.202,3.496)</td>
+</tbody></table>
+<br>
+<h4>Statistics for the current model</h4>
+ Deviance                       = 3274.913693<br>
+ Number of estimated parameters = 12<br>
+<h2>Results for Population-Average Model</h2>
+The value of the log-likelihood function at iteration 3 = -1.563368E+003<br>
+<h4> Final estimation of fixed effects: (Population-average model)<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.483844</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.231609</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.089</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.038</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.425344</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.313907</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.355</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.177</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472061</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.214300</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.203</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.029</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532011</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.381629</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.394</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.165</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.000134</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.693</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.489</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002805</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005370</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.522</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.602</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372778</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.138214</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.697</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.007</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.372754</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.258934</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.440</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.150</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040014</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.230382</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.174</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.862</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.010400</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.225136</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   4.488</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.006463</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.110894</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.076</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Odds<br>Ratio</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Confidence<br>Interval</td>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.483844</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.616409</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.390,0.974)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.425344</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.530117</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.823,2.845)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472061</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.603295</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.050,2.449)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532011</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.587422</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.276,1.249)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.999907</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.000,1.000)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002805</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.997199</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.987,1.008)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372778</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.451763</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.107,1.904)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.372754</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.688835</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.414,1.145)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040014</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.040825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.662,1.636)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.010400</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      2.746699</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.766,4.273)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub></td> <td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.006463</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>      2.735907</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>(2.201,3.401)</td>
+</tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (Population-average model with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.483844</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.234060</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.067</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.040</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.425344</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.342466</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.242</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.216</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472061</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.194285</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.430</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.016</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532011</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.374505</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.421</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.157</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.000144</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.644</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.520</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002805</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005881</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.477</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>157</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.634</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372778</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.130160</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.864</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.004</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.372754</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.248673</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -1.499</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.134</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040014</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.205299</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.195</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.846</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.010400</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.215908</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   4.680</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.006463</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.108078</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.312</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>924</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Odds<br>Ratio</td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Confidence<br>Interval</td>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.483844</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.616409</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.388,0.979)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&beta;</i><sub><small><i>01</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.425344</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.530117</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.778,3.010)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;   URBAN, <i>&beta;</i><sub><small><i>02</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.472061</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.603295</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.092,2.354)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;PCTMIN_S, <i>&beta;</i><sub><small><i>03</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.532011</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.587422</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.280,1.231)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; SCHSIZE, <i>&beta;</i><sub><small><i>04</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.000093</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.999907</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.000,1.000)</td>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;FRELUNCH, <i>&beta;</i><sub><small><i>05</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.002805</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.997199</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.986,1.009)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   FEMALE slope, <i>&pi;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.372778</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.451763</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.124,1.874)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BLACK slope, <i>&pi;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.372754</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      0.688835</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.423,1.122)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For HISPANIC slope, <i>&pi;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>30</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.040014</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      1.040825</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(0.696,1.557)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    ASIAN slope, <i>&pi;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>40</i></small></sub></td> <td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.010400</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>      2.746699</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>(1.798,4.196)</td>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    BYSES slope, <i>&pi;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&beta;</i><sub><small><i>50</i></small></sub></td> <td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     1.006463</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>      2.735907</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>(2.213,3.383)</td>
+</tbody></table>
+<br>
+</body></html>

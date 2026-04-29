@@ -1,0 +1,26 @@
+#HLM3 MDM CREATION TEMPLATE
+mdmtype:2
+rawdattype:spss
+l1fname:C:\Users\admin\Desktop\EG1.SAV
+l2fname:C:\Users\admin\Desktop\EG2.SAV
+l3fname:C:\Users\admin\Desktop\EG3.SAV
+l1missing:n
+timeofdeletion:now
+mdmname:assignment2_partA.mdm
+*begin l1vars
+level3id:SCHOOLID
+level2id:CHILDID
+YEAR
+MATH
+YEARSQ
+*end l1vars
+*begin l2vars
+level3id:SCHOOLID
+level2id:CHILDID
+BLACK
+HISPANIC
+*end l2vars
+*begin l3vars
+level3id:SCHOOLID
+LOWINC
+*end l3vars

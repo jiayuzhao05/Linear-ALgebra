@@ -1,0 +1,33 @@
+#WHLM CMD FILE FOR C:\Users\admin\Desktop\nels_hw.mdm
+nonlin:binomial
+microit:14
+macroit:100
+stopmicro:0.0000010000
+stopmacro:0.0001000000
+level1:BAGRAD=INTRCPT1+FEMALE+BLACK+HISPANIC+ASIAN+BYSES+RANDOM
+level2:INTRCPT1=INTRCPT2+random/
+level2:FEMALE=INTRCPT2/
+level2:BLACK=INTRCPT2/
+level2:HISPANIC=INTRCPT2/
+level2:ASIAN=INTRCPT2/
+level2:BYSES=INTRCPT2/
+fixsigma2:1.000000
+fixtau:3
+lev1ols:10
+accel:5
+level1weight:none
+level2weight:none
+varianceknown:none
+hypoth:n
+resfil1:n
+resfil2:n
+homvar:n
+constrain:N
+heterol1var:n
+laplace:y,1000
+graphgammas:C:\Users\admin\Desktop\grapheq.geq
+lvr:n
+title:no title
+output:C:\Users\admin\Desktop\hlm2.html
+fulloutput:n
+mlf:n
