@@ -1,0 +1,25 @@
+
+                      LEVEL-1 DESCRIPTIVE STATISTICS
+
+ VARIABLE NAME       N       MEAN         SD         MINIMUM      MAXIMUM
+      YEAR          7230       0.38       1.39        -2.50         2.50
+      MATH          7230      -0.54       1.53        -5.22         5.77
+    YEARSQ          7230       2.09       2.15         0.25         6.25
+
+
+                      LEVEL-2 DESCRIPTIVE STATISTICS
+
+ VARIABLE NAME       N       MEAN         SD         MINIMUM      MAXIMUM
+     BLACK          1721       0.69       0.46         0.00         1.00
+  HISPANIC          1721       0.15       0.35         0.00         1.00
+
+
+                      LEVEL-3 DESCRIPTIVE STATISTICS
+
+ VARIABLE NAME       N       MEAN         SD         MINIMUM      MAXIMUM
+    LOWINC            60      73.74      27.27         0.00       100.00
+
+MDM template:  C:\Users\admin\Desktop\1.mdmt
+MDM file name: assignment2_partA.mdm
+Date:          Apr 29, 2026
+Time:          02:49:48
