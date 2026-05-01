@@ -1,0 +1,281 @@
+<html lang=en>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body bgcolor="FFFFFF" fgcolor="000000">
+
+<hr \>
+ Module:      HLM3 (7.21)<br>
+ Date:        Apr 29, 2026<br>
+ Time:        11:06:52<br>
+
+<hr \>
+<br>
+<h2>Specifications for this HLM3 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = C:\Users\admin\Desktop\assignment2_partA.mdm<br>
+  The command file for this run = C:\Users\admin\Desktop\assignment2_partA_correct_model.hlm<br>
+  Output file name              = C:\Users\admin\Desktop\hlm3.html<br>
+  The maximum number of level-1 units = 7230<br>
+  The maximum number of level-2 units = 1721<br>
+  The maximum number of level-3 units = 60<br>
+  The maximum number of iterations = 100
+<br>
+  Method of estimation: full maximum likelihood<br>
+
+  The outcome variable is     MATH    
+<h3>Summary of the model specified</h3>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;MATH<sub><small><i>tij</i></small></sub> = <i>&pi;</i><sub><small><i>0ij</i></small></sub> + <i>&pi;</i><sub><small><i>1ij</i></small></sub>*(<i>YEAR</i><sub><small><i>tij</i></small></sub>) + <i>&pi;</i><sub><small><i>2ij</i></small></sub>*(<i>YEARSQ</i><sub><small><i>tij</i></small></sub>) + <i>e</i><sub><small><i>tij</i></small></sub><br>
+<h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>0ij</i></sub></small> = <i>&beta;</i><sub><small><i>00j</i></sub></small> + <i>&beta;</i><sub><small><i>01j</i></small></sub>*(<i>BLACK</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>02j</i></small></sub>*(<i>HISPANIC</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>0ij</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>1ij</i></sub></small> = <i>&beta;</i><sub><small><i>10j</i></sub></small> + <i>&beta;</i><sub><small><i>11j</i></small></sub>*(<i>BLACK</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>12j</i></small></sub>*(<i>HISPANIC</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>1ij</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&pi;</i><sub><small><i>2ij</i></sub></small> = <i>&beta;</i><sub><small><i>20j</i></sub></small> + <i>&beta;</i><sub><small><i>21j</i></small></sub>*(<i>BLACK</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>22j</i></small></sub>*(<i>HISPANIC</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>2ij</i></small></sub><br>
+
+<h4>Level-3 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>00j</i></small></sub> = <i>&gamma;</i><sub><small><i>000</i></small></sub> + <i>u</i><sub><small><i>00j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>01j</i></small></sub> = <i>&gamma;</i><sub><small><i>010</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>02j</i></small></sub> = <i>&gamma;</i><sub><small><i>020</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>10j</i></small></sub> = <i>&gamma;</i><sub><small><i>100</i></small></sub> + <i>u</i><sub><small><i>10j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>11j</i></small></sub> = <i>&gamma;</i><sub><small><i>110</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>12j</i></small></sub> = <i>&gamma;</i><sub><small><i>120</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>20j</i></small></sub> = <i>&gamma;</i><sub><small><i>200</i></small></sub> + <i>u</i><sub><small><i>20j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>21j</i></small></sub> = <i>&gamma;</i><sub><small><i>210</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>22j</i></small></sub> = <i>&gamma;</i><sub><small><i>220</i></small></sub> <br>
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>MATH</i><sub><small><i>tij</i></small></sub> = <i>&gamma;</i><sub><small><i>000</i></small></sub> + <i>&gamma;</i><sub><small><i>010</i></small></sub><i>*</i>BLACK<sub><small><i>ij</i></small></sub> + <i>&gamma;</i><sub><small><i>020</i></small></sub><i>*</i>HISPANIC<sub><small><i>ij</i></small></sub> + <i>&gamma;</i><sub><small><i>100</i></small></sub>*<i>YEAR</i><sub><small><i>tij</i></small></sub><br>
+&nbsp;&nbsp;&nbsp; + <i>&gamma;</i><sub><small><i>110</i></small></sub>*<i>YEAR</i><sub><small><i>tij</i></small></sub><i>*</i>BLACK<sub><small><i>ij</i></small></sub> + <i>&gamma;</i><sub><small><i>120</i></small></sub>*<i>YEAR</i><sub><small><i>tij</i></small></sub><i>*</i>HISPANIC<sub><small><i>ij</i></small></sub> + <i>&gamma;</i><sub><small><i>200</i></small></sub>*<i>YEARSQ</i><sub><small><i>tij</i></small></sub> + <i>&gamma;</i><sub><small><i>210</i></small></sub>*<i>YEARSQ</i><sub><small><i>tij</i></small></sub><i>*</i>BLACK<sub><small><i>ij</i></small></sub><br>
+&nbsp;&nbsp;&nbsp; + <i>&gamma;</i><sub><small><i>220</i></small></sub>*<i>YEARSQ</i><sub><small><i>tij</i></small></sub><i>*</i>HISPANIC<sub><small><i>ij</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>r</i><sub><small><i>0ij</i></small></sub> &nbsp;+ <i>r</i><sub><small><i>1ij</i></small></sub> *<i>YEAR</i><sub><small><i>tij</i></small></sub>+ <i>r</i><sub><small><i>2ij</i></small></sub> *<i>YEARSQ</i><sub><small><i>tij</i></small></sub>+ <i>u</i><sub><small><i>00j</i></small></sub> &nbsp;+ <i>u</i><sub><small><i>10j</i></small></sub> <i>*YEAR</i><sub><small><i>tij</i></small></sub>&nbsp;+ <i>u</i><sub><small><i>20j</i></small></sub> <i>*YEARSQ</i><sub><small><i>tij</i></small></sub>&nbsp;+ <i>e</i><sub><small><i>tij</i></small></sub><br>
+<br>
+For starting values, data from 7220 level-1 and 1716 level-2 records were used<br>
+<h2>Final Results - Iteration 691</h2><b>Iterations stopped due to small change in likelihood function</b><br><br>
+ &sigma;<sup><small>2</small></sup> =      0.27335<br>
+ Standard error of &sigma;<sup><small>2</small></sup> =      0.00684<br>
+<br>
+&tau;<sub><small>&pi;</small></sub><br>
+<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub></td><td align=right>&nbsp;&nbsp;     0.74175</td><td align=right>&nbsp;&nbsp;     0.08470</td><td align=right>&nbsp;&nbsp;    -0.03684</td></tr>
+<tr><td>    YEAR,<i>&pi;</i><sub><small><i>1</i></small></sub></td><td align=right>&nbsp;&nbsp;     0.08470</td><td align=right>&nbsp;&nbsp;     0.02409</td><td align=right>&nbsp;&nbsp;    -0.00664</td></tr>
+<tr><td>  YEARSQ,<i>&pi;</i><sub><small><i>2</i></small></sub></td><td align=right>&nbsp;&nbsp;    -0.03684</td><td align=right>&nbsp;&nbsp;    -0.00664</td><td align=right>&nbsp;&nbsp;     0.00229</td></tr>
+</tbody></table>
+Standard errors of &tau;<sub><small>&pi;</small></sub><br>
+<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub></td><td align=right>&nbsp;&nbsp;     0.03060</td><td align=right>&nbsp;&nbsp;     0.00689</td><td align=right>&nbsp;&nbsp;     0.00401</td></tr>
+<tr><td>    YEAR,<i>&pi;</i><sub><small><i>1</i></small></sub></td><td align=right>&nbsp;&nbsp;     0.00689</td><td align=right>&nbsp;&nbsp;     0.00269</td><td align=right>&nbsp;&nbsp;     0.00109</td></tr>
+<tr><td>  YEARSQ,<i>&pi;</i><sub><small><i>2</i></small></sub></td><td align=right>&nbsp;&nbsp;     0.00401</td><td align=right>&nbsp;&nbsp;     0.00109</td><td align=right>&nbsp;&nbsp;     0.00082</td></tr>
+</tbody></table>
+&tau;<sub><small>&pi;</small></sub> (as correlations)<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&pi;</i><sub><small><i>0</i></small></sub></td><td>&nbsp; 1.000</td><td>&nbsp; 0.634</td><td>&nbsp;-0.895</td></tr><tr><td>    YEAR,<i>&pi;</i><sub><small><i>1</i></small></sub></td><td>&nbsp; 0.634</td><td>&nbsp; 1.000</td><td>&nbsp;-0.894</td></tr><tr><td>  YEARSQ,<i>&pi;</i><sub><small><i>2</i></small></sub></td><td>&nbsp;-0.895</td><td>&nbsp;-0.894</td><td>&nbsp; 1.000</td></tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&pi;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.771</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>     YEAR,<i>&pi;</i><sub><small><i>1</i></sub></small><td align=center style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.221</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   YEARSQ,<i>&pi;</i><sub><small><i>2</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.064</td></tr>
+</tbody></table>
+<br>
+Note: The reliability estimates reported above are based on only 1716 of 1721<br>
+units that had sufficient data for computation.  Fixed effects and variance<br>
+components are based on all the data.<br>
+<br>
+&tau;<sub><small>&beta;</small></sub><br>
+<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1&nbsp;&nbsp;</td><td>    YEAR&nbsp;&nbsp;</td><td>  YEARSQ&nbsp;&nbsp;</td></tr><tr>
+<td>INTRCPT2,<i>&beta;</i><sub><small><i>00</i></small></sub></td><td>INTRCPT2,<i>&beta;</i><sub><small><i>10</i></small></sub></td><td>INTRCPT2,<i>&beta;</i><sub><small><i>20</i></small></sub></td></tr>
+<td align=right>&nbsp;&nbsp;    0.12459</td><td align=right>&nbsp;&nbsp;    0.01495</td><td align=right>&nbsp;&nbsp;   -0.00484</td></tr><td align=right>&nbsp;&nbsp;    0.01495</td><td align=right>&nbsp;&nbsp;    0.01152</td><td align=right>&nbsp;&nbsp;   -0.00214</td></tr><td align=right>&nbsp;&nbsp;   -0.00484</td><td align=right>&nbsp;&nbsp;   -0.00214</td><td align=right>&nbsp;&nbsp;    0.00130</td></tr></tbody></table>
+Standard errors of &tau;<sub><small>&beta;</small></sub><br>
+<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1&nbsp;&nbsp;</td><td>    YEAR&nbsp;&nbsp;</td><td>  YEARSQ&nbsp;&nbsp;</td></tr><tr>
+<td>INTRCPT2,<i>&beta;</i><sub><small><i>00</i></small></sub></td><td>INTRCPT2,<i>&beta;</i><sub><small><i>10</i></small></sub></td><td>INTRCPT2,<i>&beta;</i><sub><small><i>20</i></small></sub></td></tr>
+<td align=right>&nbsp;&nbsp;    0.02989</td><td align=right>&nbsp;&nbsp;    0.00691</td><td align=right>&nbsp;&nbsp;    0.00269</td></tr><td align=right>&nbsp;&nbsp;    0.00691</td><td align=right>&nbsp;&nbsp;    0.00278</td><td align=right>&nbsp;&nbsp;    0.00086</td></tr><td align=right>&nbsp;&nbsp;    0.00269</td><td align=right>&nbsp;&nbsp;    0.00086</td><td align=right>&nbsp;&nbsp;    0.00041</td></tr></tbody></table>
+&tau;<sub><small>&beta;</small></sub> (as correlations)<table border=0 cellpadding=0><tbody><td>INTRCPT1/INTRCPT2,<i>&beta;</i><sub><small><i>00</i></small></sub></td><td>&nbsp; 1.000</td><td>&nbsp; 0.395</td><td>&nbsp;-0.381</td></tr><td>    YEAR/INTRCPT2,<i>&beta;</i><sub><small><i>10</i></small></sub></td><td>&nbsp; 0.395</td><td>&nbsp; 1.000</td><td>&nbsp;-0.553</td></tr><td>  YEARSQ/INTRCPT2,<i>&beta;</i><sub><small><i>20</i></small></sub></td><td>&nbsp;-0.381</td><td>&nbsp;-0.553</td><td>&nbsp; 1.000</td></tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-2 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1/INTRCPT2,<i>&beta;</i><sub><small><i>00</i></sub></small><td align=center style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.747</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>     YEAR/INTRCPT2,<i>&beta;</i><sub><small><i>10</i></sub></small><td align=center style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.719</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   YEARSQ/INTRCPT2,<i>&beta;</i><sub><small><i>20</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.534</td></tr>
+</tbody></table>
+The value of the log-likelihood function at iteration 691 = -7.974188E+003<br>
+<h4> Final estimation of fixed effects:<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>000</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.261518</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.080885</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -3.233</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.002</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>01</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>010</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.618030</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.083036</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -7.443</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>02</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>020</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.391802</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.094186</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -4.160</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     YEAR slope, <i>&pi;</i><sub><small><i>1</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>100</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.836232</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.024356</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  34.334</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>11</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>110</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.066526</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.025036</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.657</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.008</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>12</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>120</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.030924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.028736</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.076</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.282</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   YEARSQ slope, <i>&pi;</i><sub><small><i>2</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>200</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.059472</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.011390</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -5.222</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>21</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>210</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.018359</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.012503</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.468</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.142</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>22</i></small></sub></td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>220</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.005424</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.015018</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   0.361</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.718</td>
+</tr></tbody></table>
+<br>
+<h4> Final estimation of fixed effects
+ (with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For INTRCPT1, <i>&pi;</i><sub><small><i>0</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>00</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>000</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.261518</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.078595</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -3.327</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.002</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>01</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>010</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.618030</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.082697</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -7.473</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>02</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>020</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.391802</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.092729</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -4.225</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     YEAR slope, <i>&pi;</i><sub><small><i>1</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>10</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>100</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.836232</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.028285</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  29.564</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>11</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>110</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.066526</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.027407</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.427</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.015</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>12</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>120</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.030924</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.030050</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.029</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.304</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   YEARSQ slope, <i>&pi;</i><sub><small><i>2</i></small></sub></td></tr>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For INTRCPT2, <i>&beta;</i><sub><small><i>20</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>200</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.059472</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.012470</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -4.769</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For    BLACK, <i>&beta;</i><sub><small><i>21</i></small></sub></td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>210</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.018359</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.012685</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.447</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.148</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;For HISPANIC, <i>&beta;</i><sub><small><i>22</i></small></sub></td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT3, <i>&gamma;</i><sub><small><i>220</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.005424</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.013639</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   0.398</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>1535</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.691</td>
+</tr></tbody></table>
+<br>
+
+<h4>Final estimation of level-1 and level-2 variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>INTRCPT1,<i>r</i><sub><small><i>0</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.86125</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.74175</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>1654</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  9470.80546</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>    YEAR slope,<i>r</i><sub><small><i>1</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.15521</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.02409</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>1654</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2346.39356</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>  YEARSQ slope,<i>r</i><sub><small><i>2</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.04780</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.00229</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>1654</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  1809.00036</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.005</td></tr>
+<tr><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>level-1, <i>e</i></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.52282</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.27335</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td></tr>
+</tbody></table>
+<br>
+Note: The chi-square statistics reported above are based on only 1716 of 1721<br>
+units that had sufficient data for computation.  Fixed effects and variance<br>
+components are based on all the data.<br>
+
+<h4>Final estimation of level-3 variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>INTRCPT1/INTRCPT2,<i>u</i><sub><small><i>00</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.35297</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.12459</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>   327.62750</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>    YEAR/INTRCPT2,<i>u</i><sub><small><i>10</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.10734</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.01152</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>59</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>   285.91096</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  YEARSQ/INTRCPT2,<i>u</i><sub><small><i>20</i></small></sub></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.03603</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     0.00130</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>59</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   146.79239</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+</tbody></table>
+<h4>Statistics for the current model</h4>
+ Deviance                       = 15948.376677<br>
+ Number of estimated parameters = 22<br>
+</body></html>
