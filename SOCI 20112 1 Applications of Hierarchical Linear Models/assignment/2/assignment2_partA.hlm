@@ -1,0 +1,35 @@
+#WHLM CMD FILE FOR C:\Users\admin\Desktop\assignment2_partA.mdm
+nonlin:n
+numit:100
+stopval:0.0000010000
+level1:MATH=INTRCPT1+YEAR+YEARSQ+RANDOM
+level2:INTRCPT1=INTRCPT2+BLACK+HISPANIC+random/
+level3:INTRCPT2=INTRCPT3+random/
+level3:BLACK=INTRCPT3/
+level3:HISPANIC=INTRCPT3/
+level2:YEAR=INTRCPT2+BLACK+HISPANIC+random/
+level3:INTRCPT2=INTRCPT3+random/
+level3:BLACK=INTRCPT3/
+level3:HISPANIC=INTRCPT3/
+level2:YEARSQ=INTRCPT2+BLACK+HISPANIC+random/
+level3:INTRCPT2=INTRCPT3+random/
+level3:BLACK=INTRCPT3/
+level3:HISPANIC=INTRCPT3/
+fixtau2:3
+fixtau3:3
+accel:5
+level1weight:none
+level2weight:none
+level3weight:none
+varianceknown:none
+hypoth:n
+resfil1:n
+resfil2:n
+resfil3:n
+constrain:N
+graphgammas:C:\Users\admin\Desktop\grapheq.geq
+lvr-beta:n
+title:no title
+output:C:\Users\admin\Desktop\hlm3.html
+fulloutput:n
+fishertype:2
