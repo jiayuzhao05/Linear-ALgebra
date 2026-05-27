@@ -1,0 +1,30 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: Read1 ~ Sports + (1 + Sports | S1_ID)
+   Data: dat
+Control: lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 112648.5  112693.1  -56318.3  112636.5     12430 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.6606 -0.6735 -0.1382  0.5524  4.3725 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr  
+ S1_ID    (Intercept) 106.2    10.305         
+          Sports       11.5     3.392   -0.35 
+ Residual             455.7    21.347         
+Number of obs: 12436, groups:  S1_ID, 817
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)  77.2313     0.4429 755.1507 174.392   <2e-16 ***
+Sports        4.0384     0.4439 684.7114   9.097   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+       (Intr)
+Sports -0.407

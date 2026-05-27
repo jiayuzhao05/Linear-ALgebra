@@ -1,0 +1,5 @@
+"model","term","estimate","std.error","statistic","conf.low","conf.high"
+"Naive HLM","Sports",4.038,0.444,9.097,3.167,4.91
+"Covariate-Adjusted HLM","Sports",0.97,0.301,3.221,0.379,1.56
+"PS-Stratified HLM","Sports",1.08,0.442,2.447,0.215,1.946
+"PS-Stratified + Covariate-Adjusted HLM","Sports",0.958,0.296,3.242,0.379,1.537

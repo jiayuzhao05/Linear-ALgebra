@@ -1,0 +1,49 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: Read1 ~ Sports + Male + NonWhite + SES + Arts + ReadK + Age +  
+    Catholic + OthPriv + SchKEnrl + (1 + Sports | S1_ID)
+   Data: dat
+Control: lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 102024.4  102135.8  -50997.2  101994.4     12421 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.0869 -0.6676 -0.1056  0.5722  4.2393 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr 
+ S1_ID    (Intercept)  18.469   4.298        
+          Sports        2.253   1.501   0.41 
+ Residual             200.655  14.165        
+Number of obs: 12436, groups:  S1_ID, 817
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)  2.505e+01  2.363e+00  1.178e+04  10.599  < 2e-16 ***
+Sports       9.695e-01  3.010e-01  8.005e+02   3.221  0.00133 ** 
+Male        -1.152e+00  2.674e-01  1.216e+04  -4.309 1.66e-05 ***
+NonWhite    -1.017e+00  3.237e-01  8.613e+03  -3.142  0.00168 ** 
+SES          2.528e+00  2.070e-01  1.187e+04  12.209  < 2e-16 ***
+Arts         1.066e+00  3.877e-01  1.237e+04   2.749  0.00599 ** 
+ReadK        1.234e+00  1.038e-02  1.240e+04 118.910  < 2e-16 ***
+Age         -5.312e-02  3.090e-02  1.240e+04  -1.719  0.08562 .  
+Catholic    -4.254e-02  6.798e-01  7.316e+02  -0.063  0.95011    
+OthPriv      1.030e+00  7.504e-01  9.178e+02   1.373  0.17011    
+SchKEnrl    -3.949e-03  5.315e-03  7.588e+02  -0.743  0.45772    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+         (Intr) Sports Male   NonWht SES    Arts   ReadK  Age    Cathlc OthPrv
+Sports    0.016                                                               
+Male      0.018 -0.192                                                        
+NonWhite -0.100  0.138 -0.016                                                 
+SES      -0.023 -0.150  0.006  0.144                                          
+Arts      0.005 -0.038  0.057 -0.037 -0.137                                   
+ReadK    -0.073 -0.030  0.095  0.030 -0.230 -0.066                            
+Age      -0.952 -0.042 -0.088  0.048  0.081 -0.013 -0.134                     
+Catholic -0.116 -0.030  0.008  0.007 -0.117  0.002 -0.027  0.015              
+OthPriv  -0.122  0.017 -0.001  0.023 -0.151 -0.042 -0.059  0.030  0.277       
+SchKEnrl -0.209 -0.004 -0.006 -0.070 -0.028 -0.001 -0.012  0.027  0.377  0.373

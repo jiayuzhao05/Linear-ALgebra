@@ -1,0 +1,27 @@
+
+Call:
+glm(formula = ps_formula, family = binomial, data = dat)
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.9388768  0.3477717  -8.451  < 2e-16 ***
+Male         0.8925828  0.0413108  21.607  < 2e-16 ***
+NonWhite    -0.8929302  0.0459014 -19.453  < 2e-16 ***
+SES          0.6563052  0.0314944  20.839  < 2e-16 ***
+Arts         0.2424717  0.0576959   4.203 2.64e-05 ***
+ReadK        0.0059087  0.0015427   3.830 0.000128 ***
+Age          0.0232139  0.0046052   5.041 4.64e-07 ***
+Catholic     0.3331362  0.0624528   5.334 9.60e-08 ***
+OthPriv     -0.2626392  0.0745435  -3.523 0.000426 ***
+SchKEnrl     0.0004845  0.0005252   0.923 0.356210    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 16407  on 12435  degrees of freedom
+Residual deviance: 14447  on 12426  degrees of freedom
+AIC: 14467
+
+Number of Fisher Scoring iterations: 4
+

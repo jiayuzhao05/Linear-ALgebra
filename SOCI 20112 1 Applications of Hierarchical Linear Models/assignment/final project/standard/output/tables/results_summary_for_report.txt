@@ -1,0 +1,13 @@
+RESULTS SUMMARY
+
+Naive HLM Sports coefficient: 4.038
+Covariate-adjusted HLM Sports coefficient: 0.97
+PS-stratified HLM Sports coefficient: 1.08
+PS-stratified + covariate-adjusted HLM Sports coefficient: 0.958
+
+Proportion of within-stratum SMDs below .10: 0.8
+Proportion of within-stratum SMDs below .20: 0.889
+
+Suggested interpretation:
+The naive model showed a relatively large positive association between sports participation and first-grade reading achievement. After adjusting for student- and school-level covariates, the estimated association became much smaller, suggesting that much of the naive association was due to pre-existing differences between students. Propensity score stratification produced a smaller positive estimate similar to the adjusted model, indicating that sports participation remained positively associated with reading achievement after improving covariate balance. However, because unobserved confounding may remain, the results should be interpreted as associational rather than definitively causal.
+

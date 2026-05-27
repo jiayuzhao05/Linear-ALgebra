@@ -1,0 +1,39 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: Read1 ~ Sports + strata + Male + NonWhite + SES + Arts + ReadK +  
+    Age + Catholic + OthPriv + SchKEnrl + (1 | S1_ID)
+   Data: dat_ps
+Control: lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 1e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+ 101648.9  101775.1  -50807.4  101614.9     12371 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.0231 -0.6690 -0.1075  0.5689  4.3353 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ S1_ID    (Intercept)  20.83    4.564  
+ Residual             201.21   14.185  
+Number of obs: 12388, groups:  S1_ID, 817
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)  2.615e+01  2.424e+00  1.178e+04  10.787  < 2e-16 ***
+Sports       9.579e-01  2.955e-01  1.230e+04   3.242 0.001192 ** 
+strata2      2.063e+00  5.760e-01  1.217e+04   3.581 0.000344 ***
+strata3      2.450e+00  7.824e-01  1.221e+04   3.131 0.001744 ** 
+strata4      3.478e+00  1.001e+00  1.218e+04   3.474 0.000514 ***
+strata5      4.333e+00  1.336e+00  1.219e+04   3.244 0.001184 ** 
+Male        -2.458e+00  4.972e-01  1.220e+04  -4.943 7.79e-07 ***
+NonWhite     5.349e-01  5.624e-01  1.229e+04   0.951 0.341588    
+SES          1.748e+00  3.681e-01  1.237e+04   4.749 2.07e-06 ***
+Arts         7.143e-01  4.028e-01  1.232e+04   1.773 0.076190 .  
+ReadK        1.225e+00  1.067e-02  1.239e+04 114.760  < 2e-16 ***
+Age         -8.918e-02  3.296e-02  1.237e+04  -2.706 0.006820 ** 
+Catholic    -6.365e-01  6.959e-01  8.027e+02  -0.915 0.360683    
+OthPriv      1.212e+00  7.602e-01  9.474e+02   1.594 0.111350    
+SchKEnrl    -5.575e-03  5.367e-03  7.743e+02  -1.039 0.299325    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
