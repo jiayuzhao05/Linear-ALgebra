@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+&lt;table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;"&gt;
+&lt;caption&gt;Propensity Score Model (Logistic Regression)&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; term &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; std.error &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; statistic &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; p.value &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; conf.low &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; conf.high &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; (Intercept) &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -2.939 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.348 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -8.451 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -3.621 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -2.258 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Male &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.893 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.041 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.607 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.812 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.974 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; NonWhite &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.893 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.046 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -19.453 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.983 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.803 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; SES &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.656 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.031 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.839 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.595 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.718 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Arts &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.242 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.058 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.203 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.129 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.355 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; ReadK &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.006 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.002 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.830 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.003 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.009 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Age &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.023 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.005 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.041 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.014 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.032 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Catholic &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.333 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.062 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.334 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.211 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.456 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; OthPriv &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.263 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.075 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -3.523 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.409 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.117 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; SchKEnrl &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.923 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.356 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.001 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.002 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</body>
+</html>

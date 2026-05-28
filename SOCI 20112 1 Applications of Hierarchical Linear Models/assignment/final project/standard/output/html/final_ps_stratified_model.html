@@ -1,0 +1,188 @@
+<html lang=en>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body bgcolor="FFFFFF" fgcolor="000000">
+
+<hr \>
+ Module:      HLM2 (7.30)<br>
+ Date:        May 27, 2026<br>
+ Time:        21:30:12<br>
+
+<hr \>
+<br>
+<h2>Specifications for this HLM2 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = C:\HLMproject\eclsk_ps_project.mdm<br>
+  The command file for this run = C:\HLMproject\final_ps_stratified_model.hlm<br>
+  Output file name              = C:\HLMproject\hlm2.html<br>
+  The maximum number of level-1 units = 12388<br>
+  The maximum number of level-2 units = 817<br>
+  The maximum number of iterations = 100<br>
+  Method of estimation: restricted maximum likelihood<br>
+<br>
+<br>
+  The outcome variable is    READ1    <br>
+<h3>Summary of the model specified</h3>
+<h4>Step 2 model</h4>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&beta;</i><sub><small><i>0j</i></small></sub> + <i>&beta;</i><sub><small><i>1j</i></small></sub>*(<i>SPORTS</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>2j</i></small></sub>*(<i>STRATA2</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>3j</i></small></sub>*(<i>STRATA3</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>4j</i></small></sub>*(<i>STRATA4</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>5j</i></small></sub>*(<i>STRATA5</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>ij</i></small></sub>
+<br>
+<h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>0j</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub> + <i>u</i><sub><small><i>0j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>1j</i></small></sub> = <i>&gamma;</i><sub><small><i>10</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>2j</i></small></sub> = <i>&gamma;</i><sub><small><i>20</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>3j</i></small></sub> = <i>&gamma;</i><sub><small><i>30</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>4j</i></small></sub> = <i>&gamma;</i><sub><small><i>40</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>5j</i></small></sub> = <i>&gamma;</i><sub><small><i>50</i></small></sub> <br>
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>10</i></small></sub>*<i>SPORTS</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>20</i></small></sub>*<i>STRATA2</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>30</i></small></sub>*<i>STRATA3</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>40</i></small></sub>*<i>STRATA4</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>50</i></small></sub>*<i>STRATA5</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; + <i>u</i><sub><small><i>0j</i></small></sub>+ <i>r</i><sub><small><i>ij</i></small></sub><br>
+</tbody></table>
+<h2>Final Results - Iteration 6</h2><b>Iterations stopped due to small change in likelihood function</b><br>
+<br>
+ &sigma;<sup>2</sup> =    447.72233<br>
+<br>
+&tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&beta;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;    69.79250</td></tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&beta;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.676</td></tr>
+</tbody></table>
+The value of the log-likelihood function at iteration 6 = -5.586299E+004<br>
+<h4> Final estimation of fixed effects:<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    70.810463</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.554151</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'> 127.782</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.080172</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.441610</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.446</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.014</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA2 slope, <i>&beta;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     4.736220</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.633073</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   7.481</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA3 slope, <i>&beta;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     7.848139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.657994</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  11.927</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA4 slope, <i>&beta;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     9.754947</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.679166</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  14.363</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA5 slope, <i>&beta;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    16.132598</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.723465</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  22.299</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    70.810463</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.504707</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'> 140.300</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.080172</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.468229</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.307</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.021</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA2 slope, <i>&beta;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     4.736220</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.593440</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   7.981</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA3 slope, <i>&beta;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     7.848139</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.661103</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  11.871</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA4 slope, <i>&beta;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     9.754947</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.648669</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  15.038</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For  STRATA5 slope, <i>&beta;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    16.132598</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.782820</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  20.608</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>11566</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+
+<h4>Final estimation of variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1, <i>u</i><sub><small><i>0</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     8.35419</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>    69.79250</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> 816</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2722.85597</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>level-1, <i>r</i></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    21.15945</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   447.72233</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td></tr>
+</tbody></table>
+<h4>Statistics for current covariance components model</h4>
+ Deviance                       = 111725.977840<br>
+ Number of estimated parameters = 2<br>
+</body></html>

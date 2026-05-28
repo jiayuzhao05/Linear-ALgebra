@@ -1,0 +1,23 @@
+
+                      LEVEL-1 DESCRIPTIVE STATISTICS
+
+ VARIABLE NAME       N       MEAN         SD         MINIMUM      MAXIMUM
+     READ1         12388      78.98      23.74        25.11       184.05
+    SPORTS         12388       0.37       0.48         0.00         1.00
+   STRATA2         12388       0.20       0.40         0.00         1.00
+   STRATA3         12388       0.20       0.40         0.00         1.00
+   STRATA4         12388       0.20       0.40         0.00         1.00
+   STRATA5         12388       0.20       0.40         0.00         1.00
+
+
+                      LEVEL-2 DESCRIPTIVE STATISTICS
+
+ VARIABLE NAME       N       MEAN         SD         MINIMUM      MAXIMUM
+  CATHOLIC           817       0.12       0.33         0.00         1.00
+   OTHPRIV           817       0.13       0.34         0.00         1.00
+  SCHKENRL           817      71.01      45.97         5.00       170.00
+
+MDM template:  C:\HLMproject\MDM new template.mdmt
+MDM file name: C:\HLMproject\eclsk_ps_project.mdm
+Date:          May 27, 2026
+Time:          21:13:47

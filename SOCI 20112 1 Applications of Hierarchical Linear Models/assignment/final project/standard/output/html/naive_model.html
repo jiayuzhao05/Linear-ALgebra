@@ -1,0 +1,134 @@
+<html lang=en>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body bgcolor="FFFFFF" fgcolor="000000">
+
+<hr \>
+ Module:      HLM2 (7.30)<br>
+ Date:        May 27, 2026<br>
+ Time:        16:54:35<br>
+
+<hr \>
+<br>
+<h2>Specifications for this HLM2 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = C:\HLMproject\eclsk_project.mdm<br>
+  The command file for this run = C:\HLMproject\naive_random_slope_model.html<br>
+  Output file name              = C:\HLMproject\hlm2.html<br>
+  The maximum number of level-1 units = 12436<br>
+  The maximum number of level-2 units = 817<br>
+  The maximum number of iterations = 100<br>
+  Method of estimation: restricted maximum likelihood<br>
+<br>
+<br>
+  The outcome variable is    READ1    <br>
+<h3>Summary of the model specified</h3>
+<h4>Step 2 model</h4>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&beta;</i><sub><small><i>0j</i></small></sub> + <i>&beta;</i><sub><small><i>1j</i></small></sub>*(<i>SPORTS</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>ij</i></small></sub>
+<br>
+<h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>0j</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub> + <i>u</i><sub><small><i>0j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>1j</i></small></sub> = <i>&gamma;</i><sub><small><i>10</i></small></sub> + <i>u</i><sub><small><i>1j</i></small></sub><br>
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>10</i></small></sub>*<i>SPORTS</i><sub><small><i>ij</i></small></sub>&nbsp; + <i>u</i><sub><small><i>0j</i></small></sub> + <i>u</i><sub><small><i>1j</i></small></sub>*<i>SPORTS</i><sub><small><i>ij</i></small></sub>&nbsp;+ <i>r</i><sub><small><i>ij</i></small></sub><br>
+</tbody></table>
+<h2>Final Results - Iteration 23</h2><b>Iterations stopped due to small change in likelihood function</b><br>
+<br>
+ &sigma;<sup>2</sup> =    455.47203<br>
+<br>
+&tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&beta;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;   106.39075</td><td align=right>&nbsp;&nbsp;   -12.49374</td></tr><tr><td>  SPORTS,<i>&beta;</i><sub><small><i>1</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;   -12.49374</td><td align=right>&nbsp;&nbsp;    13.03722</td></tr></tbody></table>
+<br>
+&tau; (as correlations)<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&beta;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp; 1.000</td><td align=right>&nbsp;&nbsp;-0.335</td></tr><tr><td>  SPORTS,<i>&beta;</i><sub><small><i>1</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;-0.335</td><td align=right>&nbsp;&nbsp; 1.000</td></tr></tbody></table><br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&beta;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.669</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   SPORTS,<i>&beta;</i><sub><small><i>1</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.084</td></tr>
+</tbody></table>
+<br>
+Note: The reliability estimates reported above are based on only 740 of 817<br>
+units that had sufficient data for computation.  Fixed effects and variance<br>
+components are based on all the data.<br>
+The value of the log-likelihood function at iteration 23 = -5.631817E+004<br>
+<h4> Final estimation of fixed effects:<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    77.230482</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.443127</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'> 174.285</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     4.037711</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.446490</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.043</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    77.230482</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.442891</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'> 174.378</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>     4.037711</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.443815</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   9.098</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>816</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr></tbody></table>
+<br>
+
+<h4>Final estimation of variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1, <i>u</i><sub><small><i>0</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>    10.31459</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>   106.39075</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> 739</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2388.76201</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>   SPORTS slope, <i>u</i><sub><small><i>1</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     3.61071</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>    13.03722</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> 739</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>   796.64064</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.069</td></tr>
+<tr><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>level-1, <i>r</i></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    21.34179</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   455.47203</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td></tr>
+</tbody></table>
+<br>
+Note: The chi-square statistics reported above are based on only 740 of 817<br>
+units that had sufficient data for computation.  Fixed effects and variance<br>
+components are based on all the data.<br>
+<h4>Statistics for current covariance components model</h4>
+ Deviance                       = 112636.343651<br>
+ Number of estimated parameters = 4<br>
+</body></html>

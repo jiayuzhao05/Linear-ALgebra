@@ -1,0 +1,250 @@
+<html lang=en>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<body bgcolor="FFFFFF" fgcolor="000000">
+
+<hr \>
+ Module:      HLM2 (7.30)<br>
+ Date:        May 27, 2026<br>
+ Time:        20:20:13<br>
+
+<hr \>
+<br>
+<h2>Specifications for this HLM2 run</h2>  Problem Title: no title<br>
+<br>
+  The data source for this run  = C:\HLMproject\eclsk_project.mdm<br>
+  The command file for this run = C:\HLMproject\adjusted_model.hlm<br>
+  Output file name              = C:\HLMproject\hlm2.html<br>
+  The maximum number of level-1 units = 12436<br>
+  The maximum number of level-2 units = 817<br>
+  The maximum number of iterations = 100<br>
+  Method of estimation: restricted maximum likelihood<br>
+<br>
+<br>
+  The outcome variable is    READ1    <br>
+<h3>Summary of the model specified</h3>
+<h4>Step 2 model</h4>
+<h4>Level-1 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&beta;</i><sub><small><i>0j</i></small></sub> + <i>&beta;</i><sub><small><i>1j</i></small></sub>*(<i>SPORTS</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>2j</i></small></sub>*(<i>MALE</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>3j</i></small></sub>*(<i>NONWHITE</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>4j</i></small></sub>*(<i>SES</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>5j</i></small></sub>*(<i>ARTS</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>6j</i></small></sub>*(<i>READK</i><sub><small><i>ij</i></small></sub>) + <i>&beta;</i><sub><small><i>7j</i></small></sub>*(<i>AGE</i><sub><small><i>ij</i></small></sub>) + <i>r</i><sub><small><i>ij</i></small></sub>
+<br>
+<h4>Level-2 Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>0j</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub> + <i>&gamma;</i><sub><small><i>01</i></small></sub>*(<i>CATHOLIC</i><sub><small><i>j</i></small></sub>) + <i>&gamma;</i><sub><small><i>02</i></small></sub>*(<i>OTHPRIV</i><sub><small><i>j</i></small></sub>) + <i>&gamma;</i><sub><small><i>03</i></small></sub>*(<i>SCHKENRL</i><sub><small><i>j</i></small></sub>) + <i>u</i><sub><small><i>0j</i></small></sub><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>1j</i></small></sub> = <i>&gamma;</i><sub><small><i>10</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>2j</i></small></sub> = <i>&gamma;</i><sub><small><i>20</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>3j</i></small></sub> = <i>&gamma;</i><sub><small><i>30</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>4j</i></small></sub> = <i>&gamma;</i><sub><small><i>40</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>5j</i></small></sub> = <i>&gamma;</i><sub><small><i>50</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>6j</i></small></sub> = <i>&gamma;</i><sub><small><i>60</i></small></sub> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>&beta;</i><sub><small><i>7j</i></small></sub> = <i>&gamma;</i><sub><small><i>70</i></small></sub> <br>
+<h4>Mixed Model</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>READ1</i><sub><small><i>ij</i></small></sub> = <i>&gamma;</i><sub><small><i>00</i></small></sub>&nbsp;+ <i>&gamma;</i><sub><small><i>01</i></small></sub>*<i>CATHOLIC</i><sub><small><i>j</i></small></sub>&nbsp;+ <i>&gamma;</i><sub><small><i>02</i></small></sub>*<i>OTHPRIV</i><sub><small><i>j</i></small></sub>&nbsp;+ <i>&gamma;</i><sub><small><i>03</i></small></sub>*<i>SCHKENRL</i><sub><small><i>j</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>10</i></small></sub>*<i>SPORTS</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>20</i></small></sub>*<i>MALE</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>30</i></small></sub>*<i>NONWHITE</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>40</i></small></sub>*<i>SES</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>50</i></small></sub>*<i>ARTS</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>60</i></small></sub>*<i>READK</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ <i>&gamma;</i><sub><small><i>70</i></small></sub>*<i>AGE</i><sub><small><i>ij</i></small></sub>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp; + <i>u</i><sub><small><i>0j</i></small></sub>+ <i>r</i><sub><small><i>ij</i></small></sub><br>
+</tbody></table>
+<h2>Final Results - Iteration 6</h2><b>Iterations stopped due to small change in likelihood function</b><br>
+<br>
+ &sigma;<sup>2</sup> =    201.22212<br>
+<br>
+&tau;<table border=0 cellpadding=0><tbody><tr><td>INTRCPT1,<i>&beta;</i><sub><small><i>0</i></small></sub>&nbsp;&nbsp;</td><td align=right>&nbsp;&nbsp;    20.93304</td></tr></tbody></table>
+<br>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random level-1 coefficient</td>
+<td style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;Reliability estimate</td>
+<tbody>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1,<i>&beta;</i><sub><small><i>0</i></sub></small><td align=center style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.589</td></tr>
+</tbody></table>
+The value of the log-likelihood function at iteration 6 = -5.101094E+004<br>
+<h4> Final estimation of fixed effects:<br>
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    25.213397</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2.365908</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  10.657</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&gamma;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.159300</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.677703</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.235</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.814</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; OTHPRIV, <i>&gamma;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.894374</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.752259</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   1.189</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.235</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;SCHKENRL, <i>&gamma;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.004699</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005362</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.876</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.381</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.997368</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.294610</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   3.385</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     MALE slope, <i>&beta;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -1.141080</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.267561</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -4.265</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For NONWHITE slope, <i>&beta;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.998308</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.324982</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -3.072</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.002</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For      SES slope, <i>&beta;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     2.526525</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.207335</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  12.186</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     ARTS slope, <i>&beta;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.053403</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.387654</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.717</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.007</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    READK slope, <i>&beta;</i><sub><small><i>6</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>60</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.233955</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.010388</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'> 118.788</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For      AGE slope, <i>&beta;</i><sub><small><i>7</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>70</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    -0.054418</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.030929</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  -1.759</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.079</td>
+</tr></tbody></table>
+<br>
+<h4> Final estimation of fixed effects<br>
+ (with robust standard errors)
+</h4><table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Fixed Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Coefficient</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Standard<br> error</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>t</i>-ratio</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;Approx.<br><i>d.f.</i></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;<i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For       INTRCPT1, <i>&beta;</i><sub><small><i>0</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>00</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    25.213397</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2.403533</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  10.490</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;CATHOLIC, <i>&gamma;</i><sub><small><i>01</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.159300</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.683513</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.233</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.816</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp; OTHPRIV, <i>&gamma;</i><sub><small><i>02</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.894374</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.941171</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   0.950</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.342</td>
+</tr><tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;SCHKENRL, <i>&gamma;</i><sub><small><i>03</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.004699</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.005113</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -0.919</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>813</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.358</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For   SPORTS slope, <i>&beta;</i><sub><small><i>1</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>10</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     0.997368</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.304213</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   3.279</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     MALE slope, <i>&beta;</i><sub><small><i>2</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>20</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -1.141080</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.265721</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -4.294</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For NONWHITE slope, <i>&beta;</i><sub><small><i>3</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>30</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>    -0.998308</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.332854</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  -2.999</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.003</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For      SES slope, <i>&beta;</i><sub><small><i>4</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>40</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     2.526525</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.215469</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  11.726</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For     ARTS slope, <i>&beta;</i><sub><small><i>5</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>50</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.053403</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.435451</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>   2.419</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>0.016</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For    READK slope, <i>&beta;</i><sub><small><i>6</i></small></sub>
+</td></tr>
+<tr><td style='border:none;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>60</i></small></sub> </td><td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>     1.233955</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  0.017037</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>  72.428</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td>
+</tr><tr><td align=left colspan=6 style='border:none;padding:0in 5.4pt 0in 5.4pt'> For      AGE slope, <i>&beta;</i><sub><small><i>7</i></small></sub>
+</td></tr>
+<tr><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;&nbsp;&nbsp;INTRCPT2, <i>&gamma;</i><sub><small><i>70</i></small></sub> </td><td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    -0.054418</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  0.030975</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>  -1.757</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>11612</td>
+<td align=right valign=bottom style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>0.079</td>
+</tr></tbody></table>
+<br>
+
+<h4>Final estimation of variance components</h4>
+<table border=1 cellpadding=3 style='border-collapse:collapse;border:none'>
+<tr>
+<td align=left style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Random Effect</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Standard<br>&nbsp;Deviation</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>Variance<br>&nbsp;Component</td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;&nbsp;<i>d.f.</i></td>
+<td align=center style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&chi;<sup><small>2</small></sup></td>
+<td align=right style='border:none;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'><i>p</i>-value</td>
+</tr>
+<tbody>
+<tr><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> INTRCPT1, <i>u</i><sub><small><i>0</i></small></sub></td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>     4.57526</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>    20.93304</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'> 813</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'>  2105.20266</td><td align=right style='border:none;padding:0in 5.4pt 0in 5.4pt'><0.001</td></tr>
+<tr><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>level-1, <i>r</i></td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>    14.18528</td><td align=right style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>   201.22212</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td><td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0in 5.4pt 0in 5.4pt'>&nbsp;</td></tr>
+</tbody></table>
+<h4>Statistics for current covariance components model</h4>
+ Deviance                       = 102021.882827<br>
+ Number of estimated parameters = 2<br>
+</body></html>

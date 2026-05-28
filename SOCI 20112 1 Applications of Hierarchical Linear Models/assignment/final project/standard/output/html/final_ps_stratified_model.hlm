@@ -1,0 +1,29 @@
+#WHLM CMD FILE FOR C:\HLMproject\eclsk_ps_project.mdm
+nonlin:n
+numit:100
+stopval:0.0000010000
+level1:READ1=INTRCPT1+SPORTS+STRATA2+STRATA3+STRATA4+STRATA5+RANDOM
+level2:INTRCPT1=INTRCPT2+random/
+level2:SPORTS=INTRCPT2/
+level2:STRATA2=INTRCPT2/
+level2:STRATA3=INTRCPT2/
+level2:STRATA4=INTRCPT2/
+level2:STRATA5=INTRCPT2/
+fixtau:3
+lev1ols:10
+accel:5
+level1weight:none
+level2weight:none
+varianceknown:none
+hypoth:n
+resfil1:n
+resfil2:n
+homvar:n
+constrain:N
+heterol1var:n
+graphgammas:C:\HLMproject\grapheq.geq
+lvr:n
+title:no title
+output:C:\HLMproject\hlm2.html
+fulloutput:n
+mlf:n

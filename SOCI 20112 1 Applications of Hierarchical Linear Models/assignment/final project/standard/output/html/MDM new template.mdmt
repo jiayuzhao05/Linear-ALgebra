@@ -1,0 +1,23 @@
+#HLM2 MDM CREATION TEMPLATE
+mdmtype:0
+rawdattype:spss
+l1fname:C:\HLMproject\eclsk_ps_hlm.sav
+l2fname:C:\HLMproject\eclsk_2.sav
+l1missing:n
+timeofdeletion:now
+mdmname:C:\HLMproject\eclsk_ps_project.mdm
+*begin l1vars
+level2id:S1_ID
+READ1
+SPORTS
+STRATA2
+STRATA3
+STRATA4
+STRATA5
+*end l1vars
+*begin l2vars
+level2id:S1_ID
+CATHOLIC
+OTHPRIV
+SCHKENRL
+*end l2vars
